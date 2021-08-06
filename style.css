@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+.body {
+    background-color: silver;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    font-family: 'Ubuntu',sans-serif;
+    transition:  all 0.3s ease;
+}
+.navbar .sticky {
+    padding: 30px 0;
+    background-color: silver;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: seagreen;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+    margin-right: auto;
+    
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3 ease;
+}
+.navbar .menu li a:hover{
+    color:#1FC58E;
+}
+.navbar .sticky li a:hover{
+    color: blue;
+}
+
+.menu-icon {
+    color:white;
+    font-size: 25px;
+    cursor: pointer;
+    
+}
+
+
+.home{
+    display: flex;
+    background: url("images/portfolio3.jpg") no-repeat center;
+
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+.home .text-1{
+    font-size: 27px;
+}
+.home .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .text-3 .span {
+    color: gold;
+    font-weight: 500;
+}
+.home a{
+    display: inline-block;
+    background: rgb(64, 71, 172);
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid green;
+    transition: all 0.3s ease;
+}
+.home a:hover{
+    color:rgb(64, 71, 172);
+    background: none;
+}
+
+/*about */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins',sans-serif;
+    background-color: rgb(167, 157, 155);
+}
+.about .title{
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%) ;
+}
+
+.about .title-after{
+    position: absolute;
+    bottom: -180px;
+    left: 50%;
+    font-size: 15px;
+    padding: 5px;
+
+    transform: translateX(-50%) ;
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .column-left{
+    width: 45%;
+}
+
+.about .about-content .column-left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+.about .about-content .column-right {
+    width: 55%;
+    
+}
+.about .about-content .column-right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .column-right span{
+    color: rgb(231, 253, 106);
+}
+
+/* Responsive */
+
+@media (max-width:1104px){
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+@media (max-width:991px){
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width:947px){
+    .max-width{
+        
+        padding: 0 50px;
+    }
+    .menu-icon{
+       display: block;
+       z-index: 999;
+    }
+    .menu-icon i.active::before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+    }
+    .navbar .menu.active {
+        left: 0;
+    }
+    .navbar .menu li {
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .text-1{
+        font-size: 20px;
+    }
+    .home .text-2{
+        font-size: 60px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home .text-3{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .home .text-3 .span {
+        color: gold;
+        font-weight: 500;
+    }
+    .home a{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+@media (max-width:680px) {
+    .max-width{
+        padding: 5px 20px;
+    }
+    .home .text-2{
+        font-size: 40px;
+
+    }
+    .home .text-3{
+        font-size: 20;
+    }
+}
