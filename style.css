@@ -359,16 +359,16 @@ section{
         padding: 10px;
     }
     .about .about-content .column-left{
-        width: 30%;
+        width: 100%;
     }
     
     .about .about-content .column-left img{
-        height: 100px;
-        width: 100px;
+        height: 200px;
+        width: 200px;
         object-fit: cover;
     }
     .about .about-content .column-right {
-        width: 70%;
+        width: 100%;
         
     }
     .about .about-content .column-right .text {
@@ -383,13 +383,15 @@ section{
         text-align: justify;
     }
     .about .about-content .column-right a {
+        height: 20px;
+        width: 300px;
         display: inline-block;
         background: rgb(64, 71, 172);
         color: #fff;
         font-size: 20px;
-        padding: 10px 32px;
-        margin-top: 20px;
-        border-radius: 6px;
+        padding: 10px 30px;
+        margin-top: 10px;
+        border-radius: 4px;
         border: 2px solid green;
         transition: all 0.3s ease;
         
