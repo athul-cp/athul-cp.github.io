@@ -115,11 +115,11 @@
 section{
     padding: 100px 0;
 }
-.about{
+.about, .projects{
     font-family: 'Poppins',sans-serif;
     background-color: rgb(167, 157, 155);
 }
-.about .title{
+section .title{
     text-align: center;
     font-family: 'Ubuntu',sans-serif;
     font-size: 40px;
@@ -128,7 +128,7 @@ section{
     padding-bottom: 20px;
 
 }
-.about .title::before{
+section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -139,7 +139,7 @@ section{
     transform: translateX(-50%) ;
 }
 
-.about .title-after{
+section .title::after{
     position: absolute;
     bottom: -180px;
     left: 50%;
@@ -149,7 +149,7 @@ section{
     transform: translateX(-50%) ;
 }
 
-.about .about-content{
+.about .about-content, .projects .pro-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -193,6 +193,43 @@ section{
 .about .about-content .column-right a:hover{
     color:rgb(64, 71, 172);
     background: none;
+}
+
+/*Projects */
+
+.projects {
+    color: #fff;
+    background: #60746d;
+}
+.projects .pro-content .card{
+    width: calc(33% - 20px);
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+}
+.projects .pro-content .card:hover{
+    background: rgb(219, 51, 51);
+}
+.projects .pro-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .pro-content .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .pro-content .card i{
+    font-size: 30px;
+    color: rgb(219, 51, 51);
+    transition: color 0.3s ease;
+}
+.projects .pro-content .card:hover i{
+    color: #fff;
+}
+.projects .pro-content .card .text {
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 /* Responsive */
 
@@ -291,6 +328,7 @@ section{
         
     }
     .about .about-content .column-right .text {
+        align-items: center;
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 10px;
@@ -367,6 +405,7 @@ section{
     }
     
     .about .about-content .column-left img{
+        align-items: center;
         height: 200px;
         width: 200px;
         object-fit: cover;
