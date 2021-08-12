@@ -65,6 +65,8 @@
 }
 
 
+
+
 .home{
     display: flex;
     background: url("images/portfolio3.jpg") no-repeat center;
@@ -299,9 +301,13 @@ section .title::after{
         font-size: 20px;
         padding: 10px;
     }
+    .projects .pro-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
-@media (max-width:767px) {
+@media (max-width:690px) {
     .max-width{
         padding: 5px 20px;
     }
@@ -342,10 +348,12 @@ section .title::after{
         border-radius: 6px;
         border: 2px solid green;
         transition: all 0.3s ease;
-        
+    }
+    .projects .pro-content .card{
+        width: 100%;
     }
 }
-@media (max-width:576px){
+@media (max-width:500px){
     .max-width{
         
         padding: 0 50px;
