@@ -189,7 +189,10 @@ section{
     border-radius: 6px;
     border: 2px solid green;
     transition: all 0.3s ease;
-    
+}
+.about .about-content .column-right a:hover{
+    color:rgb(64, 71, 172);
+    background: none;
 }
 /* Responsive */
 
