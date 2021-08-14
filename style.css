@@ -63,9 +63,7 @@
 .navbar .sticky li a:hover{
     color: blue;
 }
-
-
-
+/*home*/
 
 .home{
     display: flex;
@@ -202,7 +200,7 @@ section .title::after{
     background: #60746d;
 }
 .projects .pro-content .card{
-    width: calc(33% - 20px);
+    width: calc(33% - 18px);
     background: #222;
     text-align: center;
     border-radius: 6px;
@@ -231,14 +229,16 @@ section .title::after{
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
+
+/* Skills*/
+
+
 /* Responsive */
 
 @media (max-width:1200px){
     .home .max-width{
         margin-left: 0px;
-    }
-   
-   
+    }  
 }
 
 @media (max-width:991px){
@@ -424,5 +424,8 @@ section .title::after{
         font-size: 20px;
         font-weight: 600;
         margin-bottom: 10px;
+    }
+    .projects .pro-content .card{
+        width: 100%;
     }
 }
