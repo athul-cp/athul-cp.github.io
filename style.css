@@ -113,7 +113,7 @@
 section{
     padding: 100px 0;
 }
-.about, .projects{
+.about, .projects, .skills{
     font-family: 'Poppins',sans-serif;
     background-color: rgb(167, 157, 155);
 }
@@ -147,7 +147,7 @@ section .title::after{
     transform: translateX(-50%) ;
 }
 
-.about .about-content, .projects .pro-content{
+.about .about-content, .projects .pro-content , .skills .skills-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -232,6 +232,24 @@ section .title::after{
 
 /* Skills*/
 
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .column-right .bars .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 /* Responsive */
 
