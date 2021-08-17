@@ -113,7 +113,7 @@
 section{
     padding: 100px 0;
 }
-.about, .projects, .skills{
+.about, .projects, .skills , .cer{
     font-family: 'Poppins',sans-serif;
     background-color: rgb(167, 157, 155);
 }
@@ -126,7 +126,7 @@ section .title{
     padding-bottom: 20px;
 
 }
-section .title::before{
+/*section .title::before{
     content: "";
     position: absolute;
     bottom: 0px;
@@ -145,7 +145,7 @@ section .title::after{
     padding: 5px;
 
     transform: translateX(-50%) ;
-}
+}*/
 
 .about .about-content, .projects .pro-content , .skills .skills-content{
     display: flex;
@@ -304,6 +304,21 @@ section .title::after{
 .skills .skills-content .left a:hover{
     color:rgb(64, 71, 172);
     background: none;
+}
+
+/*Certifications */
+
+.cer .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+}
+.cer .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid crimson;
 }
 
 /* Responsive */
