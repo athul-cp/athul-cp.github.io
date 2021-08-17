@@ -197,7 +197,7 @@ section .title::after{
 
 .projects {
     color: #fff;
-    background: #60746d;
+    background: #000;
 }
 .projects .pro-content .card{
     width: calc(33% - 18px);
@@ -313,7 +313,7 @@ section .title::after{
     background: #000;
 }
 .cer .carousel .card{
-    background: #424242;
+    background: #222;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
