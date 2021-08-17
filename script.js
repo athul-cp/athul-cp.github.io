@@ -8,10 +8,17 @@ $(document).ready(function()
         }
         
     });
+
+    //toggle menu
+
     $('.menu-icon').click(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-icon i').toggleClass("active");
 
     });
     
+    //owl script
+    $('.carousel').owlCarousel({
+        
+    })
 });
