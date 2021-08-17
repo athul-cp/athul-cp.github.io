@@ -158,8 +158,8 @@ section .title::after{
 }
 
 .about .about-content .column-left img{
-    height: 500px;
-    width: 400px;
+    height: 400px;
+    width: 350px;
     object-fit: cover;
 }
 .about .about-content .column-right {
