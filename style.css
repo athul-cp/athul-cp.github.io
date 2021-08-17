@@ -8,6 +8,9 @@
     text-decoration: none;
 
 }
+html{
+    scroll-behavior: smooth;
+}
 .body {
     background-color: silver;
 }
@@ -23,9 +26,10 @@
     font-family: 'Ubuntu',sans-serif;
     transition:  all 0.3s ease;
 }
-.navbar .sticky {
+.sticky {
     padding: 30px 0;
-    background-color: silver;
+    background-color: #000;
+    height: 80px;
 }
 
 .navbar .max-width{
@@ -60,8 +64,38 @@
 .navbar .menu li a:hover{
     color:#1FC58E;
 }
-.navbar .sticky li a:hover{
+.sticky li a:hover{
     color: blue;
+}
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.scroll-up-button{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-button.show{
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
 }
 /*home*/
 
@@ -89,8 +123,8 @@
     font-size: 40px;
     margin: 5px 0;
 }
-.home .text-3 .span {
-    color: gold;
+.home .text-3 span {
+    color: rgb(172, 230, 16);
     font-weight: 500;
 }
 .home a{
@@ -113,7 +147,7 @@
 section{
     padding: 100px 0;
 }
-.about, .projects, .skills , .cer , .contact{
+.about, .projects, .skills , .cer , .contact , footer{
     font-family: 'Poppins',sans-serif;
     background-color: rgb(167, 157, 155);
 }
@@ -172,7 +206,7 @@ section .title::after{
     margin-bottom: 10px;
 }
 .about .about-content .column-right span{
-    color: rgb(231, 253, 106);
+    color:rgb(172, 230, 16);
 }
 .about .about-content .column-right p{
     text-align: justify;
@@ -462,6 +496,13 @@ section .title::after{
 .contact .right form .button button:hover{
     color:rgb(64, 71, 172) ;
     background: none;
+}
+/*Footer*/
+
+footer{
+    background: #000;
+    padding: 20px 23px;
+    color: #fff;
 }
 
 
