@@ -267,7 +267,7 @@ section .title::after{
     height: 100%;
     left: 0;
     top: 0;
-    background: rgb(240, 86, 25);
+    background: crimson;
 }
 .skills .skills-content .right .html::before{
     width: 85%;
@@ -308,10 +308,39 @@ section .title::after{
 
 /*Certifications */
 
+.cer{
+    color:#fff;
+    background: #000;
+}
 .cer .carousel .card{
-    background: #222;
+    background: #424242;
     border-radius: 6px;
     padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.cer .carousel .card:hover{
+    background: crimson;
+}
+
+.cer .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+
+}
+.cer .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+
+.cer .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    color: #fff;
+    margin: 10px 0 7px 0;
 }
 .cer .carousel .card img{
     height: 150px;
@@ -319,6 +348,32 @@ section .title::after{
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid crimson;
+}
+.cer .carousel .card:hover img{
+    border-color: #fff;
+}
+.cer .carousel p{
+    color: #fff;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active, .owl-dot:hover{
+    background: crimson;
 }
 
 /* Responsive */
