@@ -14,7 +14,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 </head>
 
-<body>
+<body onload="loadfun()">
+    <div id="loading"></div>
+    <script>
+        var load= document.getElementById("loading");
+        function loadfun()
+        {
+            load.style.display='none';
+        }
+    </script>
     <div class="scroll-up-button">
         <i class="fas fa-angle-up"></i>
     </div>
