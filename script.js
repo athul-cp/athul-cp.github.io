@@ -36,6 +36,12 @@ $(document).ready(function()
         backSpeed:60,
         loop: true
     });
+    var typed= new Typed(".typing2",{
+        strings: ["Developer","Designer","Freelancer","Photograper","Traveller"],
+        typeSpeed:100,
+        backSpeed:60,
+        loop: true
+    });
     
     //owl script
     $('.carousel').owlCarousel({
