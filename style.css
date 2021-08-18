@@ -27,8 +27,8 @@ html{
     transition:  all 0.3s ease;
 }
 .sticky {
-    padding: 30px 0;
-    background-color: #000;
+    padding: 15px 0;
+    background: #000;
     height: 80px;
 }
 
@@ -46,8 +46,11 @@ html{
 
 .navbar .logo a span{
     color: seagreen;
+    transition: all 0.3s ease;
 }
-
+.navbar .sticky .logo a span{
+    color: #fff;
+}
 .navbar .menu li {
     list-style: none;
     display: inline-block;
@@ -529,6 +532,7 @@ footer{
     .menu-icon{
        display: block;
        z-index: 999;
+       color: #fff;
     }
     .menu-icon i.active::before{
         content: "\f00d";
@@ -641,6 +645,7 @@ footer{
     .menu-icon{
        display: block;
        z-index: 999;
+       color: #fff;
     }
     .menu-icon i.active::before{
         content: "\f00d";
