@@ -91,7 +91,7 @@ html{
     position: fixed;
     height: 45px;
     width: 42px;
-    background: crimson;
+    background:rgb(172, 230, 16) ;
     right: 30px;
     bottom: 30px;
     text-align: center;
@@ -255,7 +255,7 @@ section .title::after{
     cursor: pointer;
 }
 .projects .pro-content .card:hover{
-    background: rgb(219, 51, 51);
+    background: rgb(172, 230, 16);
 }
 .projects .pro-content .card .box{
     transition: all 0.3s ease;
@@ -265,7 +265,7 @@ section .title::after{
 }
 .projects .pro-content .card i{
     font-size: 30px;
-    color: rgb(219, 51, 51);
+    color: rgb(172, 230, 16);
     transition: color 0.3s ease;
 }
 .projects .pro-content .card:hover i{
@@ -368,7 +368,7 @@ section .title::after{
     transition: all 0.3s ease;
 }
 .cer .carousel .card:hover{
-    background: crimson;
+    background: rgb(172, 230, 16);
 }
 
 .cer .carousel .card .box{
@@ -394,7 +394,7 @@ section .title::after{
     width: 150px;
     object-fit: cover;
     border-radius: 50%;
-    border: 5px solid crimson;
+    border: 5px solid rgb(172, 230, 16);
 }
 .cer .carousel .card:hover img{
     border-color: #fff;
@@ -412,7 +412,7 @@ section .title::after{
     margin: 0 5px;
     outline: none!important;
     border-radius: 50%;
-    border: 2px solid crimson!important;
+    border: 2px solid rgb(172, 230, 16)!important;
     transition: all 0.3s ease;
 }
 .owl-dot.active{
@@ -420,7 +420,7 @@ section .title::after{
     border-radius: 14px;
 }
 .owl-dot.active, .owl-dot:hover{
-    background: crimson;
+    background: rgb(172, 230, 16);
 }
 
 /*Contact*/
@@ -446,7 +446,7 @@ section .title::after{
 }
 .contact .contact-content .row i{
     font-size: 25px;
-    color: crimson;
+    color: rgb(172, 230, 16);
 }
 .contact .contact-content .row .info{
     margin-left: 30px;
