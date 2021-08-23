@@ -75,7 +75,7 @@ html{
     transition: color 0.3 ease;
 }
 .navbar .menu li a:hover{
-    color:#1FC58E;
+    color:rgb(172, 230, 16);
 }
 .sticky li a:hover{
     color: blue;
