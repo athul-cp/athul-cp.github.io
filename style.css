@@ -55,7 +55,7 @@ html{
 }
 
 .navbar .logo a span{
-    color: seagreen;
+    color: rgb(172, 230, 16);
     transition: all 0.3s ease;
 }
 .navbar .sticky .logo a span{
@@ -162,7 +162,7 @@ section{
 }
 .about, .projects, .skills , .cer , .contact , footer{
     font-family: 'Poppins',sans-serif;
-    background-color: rgb(167, 157, 155);
+    background-color: #fff;
 }
 section .title{
     text-align: center;
