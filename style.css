@@ -80,6 +80,9 @@ html{
 .sticky li a:hover{
     color: blue;
 }
+.navbar .menu-icon{
+    color: #fff;
+}
 
 .menu-btn{
     color: #fff;
