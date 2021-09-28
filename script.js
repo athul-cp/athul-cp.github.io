@@ -12,7 +12,7 @@ $(document).ready(function()
             $('.scroll-up-button').removeClass("show");
         }
          
-    });
+    }); 
 
 
     //slide up
